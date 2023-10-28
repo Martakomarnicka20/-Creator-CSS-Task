@@ -1,0 +1,213 @@
+/* task1 */
+@media print {
+    .container #about ,
+    .container .tm-main-nav,
+    .heading  div,
+    .blocks div,
+    #ideas  div,
+     #contact div,
+     .container .img-contact-us,
+      #contact h2,
+      #contact button
+      {
+        display: none;
+    }
+    .container .tm-section-title {
+        color: blue;
+    }
+
+    .container .tm-team-description-container .tm-section-description:nth-child(2)  {
+        font-size: 24px;
+        font-style: italic;
+    }
+
+    .container .tm-section-description {
+        font-size: 24px;
+    }
+
+    .container .tm-section-description::first-letter {
+        padding-left: 50px;
+        color: rgb(38, 209, 225);
+        font-size: 36px;
+        text-transform: uppercase;
+    }
+    .flex-2-col {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-height:550px ;
+      }
+      
+      .tm-section-description {
+        flex: 1;
+      }
+      
+      .flex-item img {
+        max-width: 200%;
+        height: auto;
+      }
+      .tm-footer{
+        display: flex;
+        position: relative;
+        bottom: 100px;
+      }   
+      .tm-footer .text-xs-center::first-letter {
+        color: rgb(38, 209, 225);
+        font-size: 30px;
+      }
+   
+}
+/* task2 */
+#about .tm-box-bg-title:hover{
+    background-color: #87CEFA;
+    color: aliceblue;
+                -webkit-transition: all .3s ease;
+            transition: all .3s ease
+        } 
+        /* task 3 */
+      .tm-main-content  .tm-banner-text::first-letter{
+color: #87CEFA;
+font-size: 30px;
+      }
+      /* task4 */
+      .tm-sidebar, #home, #about ,  .heading  div, #ideas, .tm-content-box{
+            box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2);
+          }
+          #home{
+            border: 30px solid rgb(234, 234, 234);
+          }
+          .tm-banner-inner{
+            border: none;
+          }
+          /* task 5 */
+          .flex-2-col{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+          }
+          .container .padding-medium .tm-section-title {
+            color: blue;
+        }
+    
+        .container .tm-team-description-container .tm-section-description:nth-child(2)  {
+            font-size: 14px;
+            font-style: italic;
+            opacity: 0.5;
+        }
+    
+        .container .tm-section-description {
+            font-size: 14px;
+        }
+    
+        .container .padding-medium .tm-section-description::first-letter {
+            padding-left: 50px;
+            color: rgb(38, 209, 225);
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        .flex-2-col {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-height:550px ;
+            /* task8 */
+            line-height: 28px;
+          }
+          /*task 6  */
+          .carousel-item  .flex-item .tm-section-title {
+            color: gainsboro;
+            letter-spacing:  5px;
+          }
+          /* task7 */
+          h2 + p {
+            font-style: italic;
+          }
+          
+          /* task 9 */
+          .tm-main-content ol li a:visited {
+            text-decoration: underline;
+          }
+          .tm-main-content ol li a:hover {
+            background-color: #e4e4e4;
+            color: #0097bd;
+            border-radius: 3px;
+            padding: 2px 5px;
+            
+          }
+          .tm-main-content ol li:nth-child(1) a::after,
+          .tm-main-content ol li:nth-child(3) a::after {
+            content: " new";
+            color: red;
+            font-weight: bold;
+          }
+          /* task10 */
+    
+        .blocks {
+            padding: 15px;
+        }
+    
+        .blocks .tm-content-box .boxes .box p::first-letter {
+            font-weight: 500;
+            font-size: 18px;
+        }
+    
+        .blocks .tm-content-box .boxes .box p {
+            font-style: italic;
+            opacity: 0.8;
+        }
+        .box-work img{
+            width: 300px;
+            height: 200px;
+        }
+        .box-work{
+            display: flex;
+            flex-direction: column;
+            width: 320px;
+            background-color: #eeeeee;
+            align-items: center;
+            padding: 10px;
+        }
+        .box-work:nth-child(1),.box-work:nth-child(3),.box-work:nth-child(5){
+            background-color: #ffffff;
+        }
+        .box-work:nth-child(1),.box-work:nth-child(4),.box-work:nth-child(5),.box-work:nth-child(6),.box-work:nth-child(3){
+            box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-container{
+            padding-left: 60px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: #eeeeee;
+
+
+        }
+          /* task11 */
+          .container #contact .submit-btn {
+            width: 170px;
+            height: 50px;
+            border: 1px solid rgb(0, 153, 255);
+            color: rgb(0, 153, 255);
+            background: transparent;
+            border-radius: 1px;
+            -webkit-transition: all .3s ease;
+            transition: all .3s ease
+        }
+    
+        .container #contact .submit-btn:hover {
+            background: rgba(0, 153, 255, 0.6);
+            color: rgba(255, 255, 255, 0.6);
+            border: 1px solid rgb(0, 153, 255, 0.6);
+    
+        }
+        #contact_email::after {
+            content: '*';
+            color: red;
+            display: inline;
+          }
+          /* task12 */
+          .tm-nav-item a:hover{
+            background-color: #eeeeee;
+            
+          }
+          
+          
